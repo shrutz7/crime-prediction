@@ -1,3 +1,4 @@
+tensorflow
 joblib
 streamlit
 pandas
