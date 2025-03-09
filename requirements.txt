@@ -1,10 +1,7 @@
 joblib
 streamlit
-pandas 
-ib
-matplotlib.pyplot 
+pandas
+matplotlib
 seaborn
 numpy
-cv2
-tempfile
-load_model
+opencv-python
