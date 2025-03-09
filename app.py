@@ -11,7 +11,7 @@ from tensorflow.keras.models import load_model
 
 
 # ✅ Load Crime Dataset
-df = pd.read_csv(r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
+df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
 
 # ✅ Load Trained Model
 crime_model = joblib.load("crime_prediction_model.pkl")
@@ -62,7 +62,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
+df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
 
 # Ensure required columns exist
 required_columns = ['OCC_HOUR', 'MCI_CATEGORY']
@@ -355,7 +355,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 # ✅ Load Data Function
 @st.cache_data
 def load_data(filepath):
-    df = pd.read_csv(r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
+    df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"")
 
     # ✅ Convert REPORT_DATE to DateTime
     df["REPORT_DATE"] = pd.to_datetime(df["REPORT_DATE"], errors="coerce")
@@ -370,7 +370,7 @@ def load_data(filepath):
     return df, city_column
 
 # 📌 Load Data
-csv_filepath = r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"
+csv_filepath = r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"
 df, city_column = load_data(csv_filepath)
 
 # ✅ Streamlit App UI
