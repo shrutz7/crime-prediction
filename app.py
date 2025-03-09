@@ -262,7 +262,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 # ✅ Function to Load Data with Automatic Processing
 @st.cache_data
 def load_data(filepath):
-    df = pd.read_csv(r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
+    df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
 
     # Set date column
     df["REPORT_DATE"] = pd.to_datetime(df["REPORT_DATE"], errors="coerce")
@@ -275,7 +275,7 @@ def load_data(filepath):
     return df
 
 # 📌 Load Data (Update the file path)
-csv_filepath = r"C:\Users\nirur\Downloads\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"
+csv_filepath = r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"
 df = load_data(csv_filepath)
 
 # ✅ Select 'Crime Count' as our target variable
@@ -355,7 +355,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 # ✅ Load Data Function
 @st.cache_data
 def load_data(filepath):
-    df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv"")
+    df = pd.read_csv(r"D:\shruthi-work\final year project\Major_Crime_Indicators_Open_Data_-3805566126367379926.csv")
 
     # ✅ Convert REPORT_DATE to DateTime
     df["REPORT_DATE"] = pd.to_datetime(df["REPORT_DATE"], errors="coerce")
