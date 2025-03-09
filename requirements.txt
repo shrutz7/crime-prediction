@@ -4,4 +4,5 @@ pandas
 matplotlib
 seaborn
 numpy
-opencv-python
+opencv-python-headless
+
